@@ -14,4 +14,10 @@ public class Rook extends ChessPiece {
 	public String toString() {
 		return "R"; // em uma interface gráfica isso deve retornar a imagem da peça
 	}
+	
+	@Override
+	public boolean[][] possibleMoves() {
+		boolean[][] mat = new boolean[getBoard().getRows()][getBoard().getColumns()];
+		return mat;
+	}
 }
